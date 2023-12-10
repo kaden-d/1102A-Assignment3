@@ -1,0 +1,16 @@
+{
+    "groomingServices": {
+      "dog": {
+        "service": "Cat Grooming Service",
+        "image": "images/Cat Alchemy.jpg",
+        "description":"Our Cat Grooming Service is designed to pamper your feline friend with expert care. Our skilled groomers will ensure your cat's coat is silky-smooth, nails trimmed, and overall well-groomed, providing a stress-free and enjoyable experience for your beloved pet."
+        
+      },
+      "cat": {
+        "service": "Dog Grooming Service",
+        "image": "images/Puppy Pilot.jpg",
+        "description":"Treat your canine companion to our top-notch Dog Grooming Service. Our experienced groomers will give your dog the royal treatment, including a thorough bath, haircut, and nail trim. Your pup will leave looking and feeling their best, with a tail wagging in delight."
+      }
+    }
+  }
+  

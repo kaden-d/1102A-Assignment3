@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQuery Widgets</title>
+    <script src="../../jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="../../jquery-ui-1.13.2/jquery-ui.css">
+    <script src="../../jquery-ui-1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+    <header class="header">
+        <ul>
+            <a href="../../index.html"><li>Home</li></a>
+            <a href="interactions.html"><li>JQuery Interactions</li></a>
+            <a href="effects.html"><li>JQuery Effects</li></a>
+            <a id="onpage"><li>JQuery Widgets</li></a>
+        </ul>
+    </header>
+    <div class="card">
+        <h1>JQuery Widgets</h1>
+        <p>This page is showing a few different JQuery widgets in action!</p>
+    </div>
+    <div class = "container">    
+        <div class = "card">
+            <h2>Accordion Widget</h2>
+            <div class="items" id="accordion">
+                <h3>Click Me First</h3>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in lectus a nibh rhoncus eleifend. Mauris molestie eros a quam varius hendrerit. Donec ac velit ac urna imperdiet aliquam sed vitae eros. Fusce semper eleifend odio, sed sodales libero ullamcorper non. Donec viverra nisl ut diam malesuada, venenatis ullamcorper velit dictum. Suspendisse pulvinar vel sapien id consequat. Nunc tellus nisi, egestas non lacus sed, imperdiet porta dolor. Nullam nec tellus orci. In varius egestas dolor.
+                    </p>
+                </div>
+                <h3>Click Me Second</h3>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in lectus a nibh rhoncus eleifend.
+                    </p>
+                </div>
+                <h3>Click Me Third</h3>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in lectus a nibh rhoncus eleifend. Mauris molestie eros a quam varius hendrerit. Donec ac velit ac urna imperdiet aliquam sed vitae eros. Fusce semper eleifend odio, sed sodales libero ullamcorper non. Donec viverra nisl ut diam malesuada, venenatis ullamcorper velit dictum. Suspendisse pulvinar vel sapien id consequat. Nunc tellus nisi, egestas non lacus sed, imperdiet porta dolor. Nullam nec tellus orci. In varius egestas dolor, et mattis massa consequat in. Etiam volutpat massa eu viverra scelerisque. Proin elementum est elementum sapien maximus, ac tempor risus hendrerit. Morbi ut elit lacinia, placerat ligula quis, aliquet nisl. Donec ultricies orci massa, sit amet porta massa dignissim quis.
+                    </p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur.</li>
+                    </ul>
+                </div>
+                <h3>Click Me Fourth</h3>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar nisl at erat cursus, sit amet iaculis libero commodo. Praesent ac sodales eros. Donec tincidunt turpis at massa luctus consequat. In nec egestas risus. Sed lobortis mi non mauris tincidunt, a mollis diam gravida. Nullam eget magna facilisis arcu tristique pretium. Vestibulum semper eros massa, sit amet tempor mi aliquet sed. Nulla congue a enim eu fermentum. Praesent consectetur risus nec dolor ullamcorper ultricies. Pellentesque faucibus sem vitae aliquam bibendum. In eleifend lacus turpis, ut porta lectus faucibus in. Etiam sem ligula, lacinia efficitur rutrum quis, imperdiet eget nisi. In laoreet mi turpis, eget mollis enim porttitor sed. Cras sed lacinia augue, quis hendrerit lectus.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "card">
+            <h2>Slider</h2>
+            <p>
+                <label for="volume">Value:</label>
+                <input type="text" id="volume" readonly style="cursor:default">
+            </p>
+            <div id="slider"></div>
+        </div>
+
+        <div class = "card">
+            <h2>Date Picker</h2>
+            <div class="items">
+                <p>Date: 
+                    <input type="text" id="datePicker">
+                </p>
+            </div>
+        </div>
+
+        <div class = "card">
+            <h2>Auto Complete</h2>
+            <div class="items">
+                <label for="autoComplete">Type Any Letter: </label>
+                <input id="autoComplete">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>

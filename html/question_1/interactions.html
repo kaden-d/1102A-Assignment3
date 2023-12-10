@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQuery Interactions</title>
+    <script src="../../jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="../../jquery-ui-1.13.2/jquery-ui.css">
+    <script src="../../jquery-ui-1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../script.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+    <header class="header">
+        <ul>
+            <a href="../../index.html"><li>Home</li></a>
+            <a id="onpage"><li>JQuery Interactions</li></a>
+            <a href="effects.html"><li>JQuery Effects</li></a>
+            <a href="widgets.html"><li>JQuery Widgets</li></a>
+        </ul>
+    </header>
+    <div class="card">
+    <h1>JQuery Interactions</h1>
+    <p>This page is showing a few different JQuery interactions!</p>
+    </div>
+    <div class = "container">    
+        <div class = "card" id="trapped">
+            <h2>Draggable</h2>
+            <div id="draggable1" class="items">
+                <p>I Move Up and Down</p>
+            </div>   
+            <div id="draggable2" class="items">
+                <p>I Move Left and Right</p>
+            </div>
+            <div id="draggable3" class="items">
+                <p>I'm Trapped in This Box</p>
+            </div>
+        </div>
+
+        <div class = "card">
+            <h2>Droppable</h2>
+            <div id="draggable4" class="items">
+                <p>I Revert when Dropped in the Goal</p>
+            </div>   
+            <div id="draggable5" class="items">
+                <p>I Revert when Dropped Outside the Goal</p>
+            </div>
+            <div id="droppable" class="items">
+                <p>I am the Goal!<br>Drop Here! </p>
+            </div>
+        </div>
+
+        <div class= "card">
+            <h2>Resizable</h2>
+            <div class="items" id="resizable">
+              <p>Resize me!</p>
+            </div>
+        </div>
+
+        <div class = "card">
+            <h2>Selectable</h2>
+            <ul id="selectable">
+                <li class="items">Item 1</li>
+                <li class="items">Item 2</li>
+                <li class="items">Item 3</li>
+                <li class="items">Item 4</li>
+                <li class="items">Item 5</li>
+                <li class="items">Item 6</li>
+                <li class="items">Item 7</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>

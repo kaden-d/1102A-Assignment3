@@ -1,0 +1,141 @@
+/*Start General Document Style*/
+body{
+    background-color: beige;
+    padding: 1%;
+    margin:0;
+}
+.page{
+    background-color: beige;
+    padding: 1%;
+    margin:0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    display: flex;
+    flex-direction: column; 
+    flex: 0 0 43%;
+    padding:2%;
+    margin: 1%;
+    margin-left:2%;
+    background-color: #e0e0e0;
+    border-radius: 5%;
+    transition: 0.3s;
+    text-align: center;
+    min-height: 15em;
+}
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.items{
+    background-color: #d3ffd3;
+    max-width: 100%;
+    min-width: 30%;
+    min-height: fit-content;
+    padding:2%;
+    margin: 1%;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.items:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+/*End General Document Style*/
+
+/*Start Header Style*/
+.header {
+    width:100%;
+    
+}
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch; 
+    
+}
+
+.header li {
+    flex-grow: 1;
+    display: flex;
+    color: #000000;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 2%;
+    background-color: #3498db;
+    width: 100%;
+    margin: 0; 
+    border-right: 1px solid #000; 
+}
+
+.header a:last-child {
+    border-right: none; 
+}
+
+#onpage{
+    background-color: beige; 
+    color: black;
+}
+/*End Header Style*/
+
+/*Start Effects Styles*/
+#hide1, #hide2, #hide3, #hide4{
+    text-align: center;
+    min-height: 5em;
+}
+/*End Effects Styles*/
+
+/*Start Interactions Styles*/
+#draggable1{
+    cursor: ns-resize;
+}
+#draggable2{
+    cursor: ew-resize;
+}
+#draggable3{
+    max-width: 50%;
+    cursor: all-scroll;
+}
+.ui-state-active{
+    color:black;
+}
+#droppable {
+    background-color: white;
+}
+#selectable .ui-selecting { background: #513cf0; color:#ffffff}
+#selectable .ui-selected { background: #3318fc; color:#ffffff}
+#selectable { list-style-type: none;}
+/*End Interactions Styles*/
+
+/*Start Widget Styles*/
+#slider {
+    margin: auto; 
+    height: 90%; 
+    width:60%;
+}
+.ui-slider-range{
+    background: #d3ffd3;
+
+}
+#slider:hover .ui-slider-range{
+    background: #bbf7bb; 
+}
+.ui-slider-handle {
+    display: none; 
+}
+
+/*End Widget Styles*/
+
+/*Responsive*/
+@media (max-width: 600px) {
+    .card{
+        flex: 0 0 93%;
+    }
+}

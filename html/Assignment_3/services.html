@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--images from https://www.bing.com/images/create-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Studio - Pet Services</title>  
+    <link rel="stylesheet" href="../../style.css">
+    <script src="jquery/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.2.min.css">
+    <script src="jquery/jquery.mobile-1.4.2.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+    <header class="header">
+        <ul>
+            <a href="../../index.html"><li>Home</li></a>
+            <a href="../question_2/blog.html"><li>Blog</li></a>
+            <a id="onpage" ><li>Pet Services</li></a>
+            <a href="../question_2/contact.html"><li>Contact Us</li></a>
+        </ul>
+    </header>
+        <h1>Pet Services</h1>
+
+        <!--ui-grid for 2 column layout of grooming services, loaded from json-->
+        <div data-role="content">
+            <div class="items">
+                <h2>Grooming Services</h2>
+                <div id="groomingServices" class="ui-grid-a"></div>
+            </div>
+
+            <!--collapsible content block for pet hotel, loaded from xml-->
+            <div class="items" data-role="content" id="petHotelCollapsibleBlock">
+                    <h2>Pets Hotel</h2>
+                    <div data-role="collapsible">
+                      <h3>Kitty Hotel</h3>
+                      <p id="xmlGetCatHotelInfo"></p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>Doggy Hotel</h3>
+                        <p id="xmlGetDogHotelInfo"></p>                
+                    </div>
+            </div>
+
+            <!--collapsible set for pet day camp , loaded from xml-->
+            <section data-role="collapsible-set">
+                <div class="items" data-role="content" id="petDayCampCollapsibleSet">
+                    <h2>Pet Day Camp</h2>
+                    <div data-role="collapsible" >
+                        <h3>Kitty Day Camp</h3>
+                        <p id="xmlGetCatCampInfo"></p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>Doggy Day Camp</h3>
+                        <p id="xmlGetDogCampInfo"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
